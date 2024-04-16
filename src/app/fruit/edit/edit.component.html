@@ -1,0 +1,43 @@
+<div class="container">
+  <legend>Edit Item</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtName" class="form-lable">Name</label>
+      <input
+        type="text"
+        name="name"
+        [(ngModel)]="formdata.name"
+        class="form-control"
+        id="txtName"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="txtprice" class="form-lable">Price</label>
+      <input
+        type="number"
+        name="price"
+        [(ngModel)]="formdata.price"
+        class="form-control"
+        id="txtprice"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="txtQuantity" class="form-lable">Quentity</label>
+      <input
+        type="number"
+        name="'txtQuantity"
+        [(ngModel)]="formdata.quantity"
+        class="form-control"
+        id="txtQuantity"
+      />
+      <button
+        type="button"
+        (click)="update()"
+        routerLink="/fruit/home"
+        class="btn btn-primary"
+      >
+        Update
+      </button>
+    </div>
+  </form>
+</div>
